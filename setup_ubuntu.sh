@@ -5,7 +5,7 @@ sudo apt install dkms
 
 sudo apt-get install tilix           # A terminal app, with tabs and pans (iTerm2 alternative)
 sudo apt-get install autokey-gtk     #  A script a day, keeps the boredom away
-sudo apt install git python3 build-essential php-cli php-curl rename docker.io
+
 
 # Text editors and IDEs
 sudo snap install xdman          # Extreme download manager
@@ -18,3 +18,15 @@ sudo snap install intellij-idea-community --classic  # Install Intellij communit
 # Productivity tools
 sudo snap install xdman          # Extreme download manager
 sudo snap install todoist        # Todoist app to manage tasks
+
+
+# Setup docker
+sudo apt install git python3 build-essential php-cli php-curl rename docker.io
+sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update
+sudo apt install -y docker-ce docker-ce-cli containerd.io
+sudo systemctl start docker
+sudo systemctl enable docker
+
