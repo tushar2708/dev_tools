@@ -18,7 +18,9 @@ sudo snap install intellij-idea-community --classic  # Install Intellij communit
 # Productivity tools
 sudo snap install xdman          # Extreme download manager
 sudo snap install todoist        # Todoist app to manage tasks
-snap install obsidian --classic  # Note taking app
+sudo snap install zoom-client
+sudo snap install google-chat-desktop
+sudo snap install obsidian --classic  # Note taking app
 
 # Setup docker
 sudo apt install git python3 build-essential php-cli php-curl rename docker.io
