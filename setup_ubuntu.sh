@@ -12,8 +12,8 @@ sudo snap install xdman          # Extreme download manager
 sudo snap install sublime-text --classic         # Install Pycharm community edition
 sudo snap install --classic code
 sudo snap install pycharm-community --classic         # Install Pycharm community edition
-sudo snap install intellij-idea-community --classic  # Install Intellij community edition
-
+sudo snap install intellij-idea-community --classic   # Install Intellij community edition
+sudo snap install goland --classic                    # Install Goland
 
 # Productivity tools
 sudo snap install xdman          # Extreme download manager
