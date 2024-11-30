@@ -1,10 +1,27 @@
 sudo apt update
 sudo apt install curl
+sudo apt install dbus
+sudo apt install perl
 sudo apt install git
 sudo apt install dkms
 
 sudo apt-get install tilix           # A terminal app, with tabs and pans (iTerm2 alternative)
 sudo apt-get install autokey-gtk     #  A script a day, keeps the boredom away
+
+sudo add-apt-repository ppa:touchegg/stable
+sudo apt install touchegg
+sudo apt install gnome-shell-extension-prefs
+
+# Install gnome-shell-extension-manager
+wget -O gnome-shell-extension-installer "https://github.com/brunelli/gnome-shell-extension-installer/raw/master/gnome-shell-extension-installer"
+chmod +x gnome-shell-extension-installer
+sudo mv gnome-shell-extension-installer /usr/bin/
+
+# Install touchpad gestures extension (installing it by script without extension manager)
+wget -O x11-gestures.zip https://extensions.gnome.org/extension-data/x11gesturesjoseexposito.github.io.v24.shell-extension.zip
+mkdir -p ~/.local/share/gnome-shell/extensions/x11gestures@joseexposito.github.io
+unzip x11-gestures.zip -d ~/.local/share/gnome-shell/extensions/x11gestures@joseexposito.github.io
+gnome-extensions enable x11gestures@joseexposito.github.io
 
 
 # Text editors and IDEs
@@ -14,6 +31,7 @@ sudo snap install --classic code
 sudo snap install pycharm-community --classic         # Install Pycharm community edition
 sudo snap install intellij-idea-community --classic   # Install Intellij community edition
 sudo snap install goland --classic                    # Install Goland
+
 
 # Productivity tools
 sudo snap install xdman          # Extreme download manager
