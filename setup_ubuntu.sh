@@ -24,6 +24,10 @@ unzip x11-gestures.zip -d ~/.local/share/gnome-shell/extensions/x11gestures@jose
 gnome-extensions enable x11gestures@joseexposito.github.io
 
 
+# Other GNOMe extensions
+gnome-shell-extension-installer 16  # Install "Auto move windows"
+
+
 # Text editors and IDEs
 sudo snap install xdman          # Extreme download manager
 sudo snap install sublime-text --classic         # Install Pycharm community edition
