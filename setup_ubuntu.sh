@@ -27,6 +27,8 @@ gnome-extensions enable x11gestures@joseexposito.github.io
 # Other GNOMe extensions
 gnome-shell-extension-installer 16  # Install "Auto move windows"
 
+# Install Java
+sudo apt install openjdk-11-jdk -y
 
 
 # Text editors and IDEs
@@ -35,6 +37,7 @@ sudo snap install --classic code
 sudo snap install pycharm-community --classic         # Install Pycharm community edition
 sudo snap install intellij-idea-community --classic   # Install Intellij community edition
 sudo snap install goland --classic                    # Install Goland
+sudo snap install android-studio --classic            # Install Android Studio
 
 # Some Dev tools
 sudo snap install postman          # Extreme download manager
